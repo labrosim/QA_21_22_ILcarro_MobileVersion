@@ -17,4 +17,9 @@ public class SplashScreen extends BaseScreen{
     public String getCurrentVersion(){
         return titleTextView.getText();
     }
+
+    public SearchScreen goToSearchScreen() {
+        pause(5);
+        return new SearchScreen(driver);
+    }
 }

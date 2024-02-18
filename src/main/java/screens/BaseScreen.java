@@ -13,4 +13,13 @@ public class BaseScreen {
 
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
+
+    public void click(MobileElement element) {
+        element.click();
+    }
+    public void type(MobileElement element, String text){
+        element.click();
+        element.clear();
+        element.sendKeys(text);
+    }
 }
